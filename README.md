@@ -1,169 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DELIVERY ADAKAMI</title>
+    <title>RESTO ADA KAMI</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', sans-serif;
-            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
             color: #333;
             margin: 0;
             padding: 0;
         }
-
         header {
-            background-color: #ff7b54;
-            color: white;
-            padding: 20px 0;
+            background-color: #ffcc00;
+            padding: 20px;
             text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
+            font-size: 24px;
             font-weight: bold;
         }
-
-        header p {
-            font-size: 18px;
-            margin-top: 5px;
-        }
-
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
-
-        .menu-section {
-            margin-bottom: 40px;
-        }
-
         h2 {
-            color: #ff7b54;
-            font-size: 28px;
-            border-bottom: 2px solid #ff7b54;
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
+            color: #ff6600;
+            margin-bottom: 10px;
         }
-
         ul {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 20px;
         }
-
-        li {
-            background-color: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        li:hover {
-            transform: scale(1.05);
-        }
-
-        .order-button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 12px 24px;
-            background-color: #ff7b54;
-            color: white;
-            text-decoration: none;
+        ul li {
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 5px;
             border-radius: 5px;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
         }
-
-        .order-button:hover {
-            background-color: #e66940;
+        .price {
+            float: right;
+            color: #007b00;
         }
-
         footer {
-            text-align: center;
-            padding: 20px;
             background-color: #333;
-            color: white;
-            margin-top: 40px;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 28px;
-            }
-
-            header p {
-                font-size: 16px;
-            }
-
-            h2 {
-                font-size: 24px;
-            }
-
-            .order-button {
-                font-size: 16px;
-            }
+        .whatsapp {
+            font-weight: bold;
+            color: #25D366;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>DELIVERY ADAKAMI</h1>
-    <p>Makanan & Minuman Lezat, Siap Antar!</p>
+    RESTO ADA KAMI<br>HALAL & ENAK<br>
+    Delivery: 08.00 - 00.30 Malam
 </header>
 
 <div class="container">
-    <section class="menu-section">
-        <h2>Makanan</h2>
-        <ul>
-            <li>Nasi Goreng Kampung</li>
-            <li>Nasi Goreng Ayam Semur</li>
-            <li>Nasi Goreng Pataya</li>
-            <li>Nasi Goreng Telur</li>
-            <li>Nasi Goreng Ayam</li>
-            <li>Nasi Goreng Seafood</li>
-            <li>Ayam Penyet</li>
-            <li>Ayam Geprek</li>
-            <li>Nasi Pecel Lele</li>
-            <li>Nila Sambal Belacan</li>
-            <li>Indomie Goreng</li>
-            <li>Indomie Kuah</li>
-        </ul>
-    </section>
-
-    <section class="menu-section">
-        <h2>Minuman</h2>
-        <ul>
-            <li>Teh Manis (H/C)</li>
-            <li>Nutri Sari</li>
-            <li>Extra Joss</li>
-            <li>Whita Koffie (H/C)</li>
-            <li>Kopi Tubruk</li>
-        </ul>
-    </section>
-
-    <section class="menu-section">
-        <h2>Snack</h2>
-        <ul>
-            <li>Jasuke</li>
-            <li>Sosis Gulung Telur</li>
-            <li>Bakso Goreng</li>
-            <li>Bakwan Sayur</li>
-            <li>Bakwan Jagung</li>
-        </ul>
-    </section>
-
-    <a href="https://wa.me/6281396105200" class="order-button">Pesan Sekarang via WhatsApp</a>
+    <h2>Kuota Katering</h2>
+    <ul>
+        <li>Bebas pilih semua menu makanan<br>
+            * 15X makan = 40$<br>
+            * 30X makan = 75$
+        </li>
+    </ul>
+    <h2>List Menu Hari Ini</h2>
+    <ul>
+        <li>Ayam Goreng Sambal Belacan <span class="price">3$</span></li>
+        <li>Ayam Penyet <span class="price">3$</span></li>
+        <li>Ayam Geprek <span class="price">3$</span></li>
+        <li>Nasi Pecel Lele <span class="price">3$</span></li>
+        <li>Nila Sambal Belacan <span class="price">3$</span></li>
+        <li>Nasi Telor Dadar <span class="price">2.5$</span></li>
+        <!-- Daftar menu lainnya -->
+    </ul>
+    <h2>Stand Cemilan</h2>
+    <ul>
+        <li>Martabak Mini Coklat/Keju</li>
+        <li>Martabak Mie</li>
+        <li> JASUKE</li>
+        <li>Pisang Crispy</li>
+        <li>Salad Buah</li>
+        <li>Sup Buah</li>
+        <!-- Cemilan lainnya -->
+    </ul>
+    <h2>Menu Minuman</h2>
+    <ul>
+        <li>Es Milo <span class="price">1.5$</span></li>
+        <li>Jus Mangga <span class="price">1.5$</span></li>
+        <li>Jus Apel <span class="price">1.5$</span></li>
+        <!-- Daftar minuman lainnya -->
+    </ul>
+    <h2>Layanan Tambahan</h2>
+    <ul>
+        <li>Paket ulang tahun & acara lainnya</li>
+        <li>Paket catering harian, mingguan, bulanan</li>
+        <li>Kue ulang tahun</li>
+    </ul>
+<h2>Pembayaran</h2>
+    <ul>
+        <li>Cash Riel/Dollar</li>
+        <li>ABA Bank</li>
+        <li>Via Transfer Rupiah</li>
+    </ul>
+    <h2>Pengantaran</h2>
+    <p>Pengantaran ke: Gwin, Venus, Galaxy, Mocbai, Sun City, Crown, New World, Dinasty, Heng Heng, One Piece</p>
+    <p>Pesan sekarang dengan menghubungi kami melalui WhatsApp: <span class="whatsapp">+6281396105200</span></p>
 </div>
 
 <footer>
-    <p>&copy; 2024 DELIVERY ADAKAMI</p>
+    © 2024 Esto Ada Kami - All Rights Reserved
 </footer>
 
 </body>
